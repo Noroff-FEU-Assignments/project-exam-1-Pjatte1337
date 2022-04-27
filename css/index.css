@@ -1,0 +1,301 @@
+/* ===== Body ===== */ 
+body {
+    font-family: 'Roboto', sans-serif;
+    /*overflow-x:hidden; */
+    background-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Header ===== */ 
+header
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 20px;
+    z-index: 10;
+    background: #440e70;
+}
+
+    
+header .navigation
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+    
+header .navigation li
+{
+    list-style: none;
+    margin: 0 30px;
+    text-align: center;
+}
+
+
+header .navigation li a
+{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.menu-list-item.active{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1rem;
+    border-bottom: 2px solid #ffffff;
+}
+
+
+header .navigation li a:hover
+{
+    color: #a40000;
+}
+
+
+/* ===== Content ===== */ 
+.container
+{
+    background-color: #ffffff;
+    min-height: calc(100vh - 50px);
+    color: #010202;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Headliner */
+.head
+{
+    background-color: #ffff;
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.head h1, p
+{
+    font-family:'Oswlad', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    position: relative;
+    top: 30%;
+}
+
+.head p
+{
+    font-style: italic;
+}
+
+/* content text */
+.content
+{
+    background-color: #ffff;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.content h2
+{
+    font-family:'Oswlad', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    position: relative;
+    top: 25%;
+}
+
+.league-logo
+{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 30%;
+}
+
+.logo
+{
+    height: 100px;
+    position: relative;
+    margin-top: 25px;
+    margin-left: 25px;
+
+}
+
+/* slider */
+.slide
+{
+    background-color: #ffff;
+    height: 600px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.slider
+{
+    overflow: hidden;
+    width: 900px;
+    position: relative;
+    left: 500px;
+    margin-top: 50px;
+}
+
+.slider .slider-item,
+.slider .slider-item-hidden
+{
+    display: none;
+}
+
+.slider .slide-img
+{
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    height: 500px;
+}
+
+.slider .slider-show
+{
+    display: block;
+    animation: fadeVisibility 0.5s;
+}
+
+@keyframes fadeVisibility
+{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: opacity linear;
+    }
+}
+
+.slider .slider-actions
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider .slider-actions button
+{
+    border-radius: 50px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ===== Footer ===== */ 
+footer 
+{
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    padding: 20px, 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #440e70;
+}
+  
+footer .social_icon,
+footer .menu
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+  
+footer .social_icon li,
+footer .menu li
+{
+    list-style: none;
+}
+
+  
+footer .menu li a
+{
+    font-size: 1em;
+    color: #ffffff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+  
+footer .menu li a:hover
+{
+    opacity: 1;
+    color: #ffffff;
+}
