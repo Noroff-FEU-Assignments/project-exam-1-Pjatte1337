@@ -1,90 +1,6 @@
-/* ===== Body ===== */ 
-body {
-    font-family: 'Roboto', sans-serif;
-    /*overflow-x:hidden; */
-    background-color: #ffffff;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* ===== Header ===== */ 
-header
-{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px 20px;
-    z-index: 10;
-    background: #440e70;
-}
-
-    
-header .navigation
-{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 10px 0;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-    
-header .navigation li
-{
-    list-style: none;
-    margin: 0 30px;
-    text-align: center;
-}
-
-
-header .navigation li a
-{
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 500;
-    letter-spacing: 1px;
-}
-
-.menu-list-item.active{
-    font-weight: bold;
-    font-style: italic;
-    font-size: 1rem;
-    border-bottom: 2px solid #ffffff;
-}
-
-
-header .navigation li a:hover
-{
-    color: #a40000;
-}
-
-
-/* ===== Content ===== */ 
-.container
-{
-    background-color: #ffffff;
-    min-height: calc(100vh - 50px);
-    color: #010202;
-    display: flex;
-    flex-wrap:wrap ;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 
 /* Headliner */
-.head
-{
+.head {
     background-color: #ffff;
     height: 150px;
     width: 100%;
@@ -92,8 +8,7 @@ header .navigation li a:hover
     justify-content: center;
 }
 
-.head h1, p
-{
+.head h1, p {
     font-family:'Oswlad', sans-serif;
     font-weight: 700;
     font-style: bold;
@@ -101,14 +16,13 @@ header .navigation li a:hover
     top: 30%;
 }
 
-.head p
-{
+.head p {
     font-style: italic;
 }
 
+
 /* content text */
-.content
-{
+.content {
     background-color: #ffff;
     height: 400px;
     width: 100%;
@@ -116,8 +30,7 @@ header .navigation li a:hover
     justify-content: center;
 }
 
-.content h2
-{
+.content h2 {
     font-family:'Oswlad', sans-serif;
     font-weight: 700;
     font-style: italic;
@@ -125,8 +38,7 @@ header .navigation li a:hover
     top: 25%;
 }
 
-.league-logo
-{
+.league-logo {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -134,30 +46,25 @@ header .navigation li a:hover
     top: 30%;
 }
 
-.logo
-{
+.logo {
     height: 100px;
     position: relative;
     margin-top: 25px;
     margin-left: 25px;
-
 }
 
+
 /* slider */
-.slide
-{
+.slide {
     background-color: #ffff;
     height: 600px;
     width: 100%;
     text-align: center;
     align-items: center;
     justify-content: center;
-
 }
 
-
-.slider
-{
+.slider {
     overflow: hidden;
     width: 900px;
     position: relative;
@@ -166,21 +73,25 @@ header .navigation li a:hover
 }
 
 .slider .slider-item,
-.slider .slider-item-hidden
-{
+.slider .slider-item-hidden {
     display: none;
 }
 
-.slider .slide-img
-{
+.slider .slide-img {
     width: 100%;
     max-width: 900px;
     height: auto;
     height: 500px;
 }
 
-.slider .slider-show
-{
+.slider .info {
+    position: absolute;
+    top: 75%;
+    left: 42.5%;
+    background-color: #a40000;
+}
+
+.slider .slider-show {
     display: block;
     animation: fadeVisibility 0.5s;
 }
@@ -196,8 +107,7 @@ header .navigation li a:hover
     }
 }
 
-.slider .slider-actions
-{
+.slider .slider-actions {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -206,96 +116,11 @@ header .navigation li a:hover
     transform: translateY(-50%);
 }
 
-.slider .slider-actions button
-{
+.slider .slider-actions button {
     border-radius: 50px;
     border: 0;
     font-weight: bold;
     cursor: pointer;
     width: 40px;
     height: 40px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* ===== Footer ===== */ 
-footer 
-{
-    position: relative;
-    width: 100%;
-    min-height: 100px;
-    padding: 20px, 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: #440e70;
-}
-  
-footer .social_icon,
-footer .menu
-{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-    flex-wrap: wrap;
-}
-  
-footer .social_icon li,
-footer .menu li
-{
-    list-style: none;
-}
-
-  
-footer .menu li a
-{
-    font-size: 1em;
-    color: #ffffff;
-    margin: 0 10px;
-    display: inline-block;
-    transition: 0.5s;
-    text-decoration: none;
-    opacity: 0.75;
-}
-
-  
-footer .menu li a:hover
-{
-    opacity: 1;
-    color: #ffffff;
 }

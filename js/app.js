@@ -10,6 +10,7 @@ document.getElementById("slider-button-next")
 document.getElementById("slider-button-prev")
     .addEventListener("click", function() {
         moveToPrevSlide();
+        console.log("lol")
     });
 
 function updateSlidePosition() {
