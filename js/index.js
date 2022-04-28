@@ -1,52 +1,59 @@
-const url = "http://www.joakimvanebo.one/wp-json/wp/v2/posts?per_page=20";
+const url = "http://www.joakimvanebo.one/wp-json/wp/v2/posts?per_page=6";
 
-const sliderItem = document.querySelector(".slider-item");
-const sliderItem2 = document.querySelector("slider-item");
-const id = 121;
+const movieContainer = document.querySelector(".slider-container");
 
-async function fetchApi() {
-    try {
-        const response = await fetch(url);
-        const json = await response.json();
-        console.log(json);
+async function getProduct(){
+    const response = await fetch(url);
+    const products = await response.json();
+    console.log(products);
 
-        const img = json.featured_image_url;
+    movieContainer.innerHTML =" ";
 
-        for (let i = 0; i < json.length; i++) {
+    products.forEach(movie => {
+        const images = movie.featured_image_url;
+        const name = movie.title.rendered;
 
-            if (i === id) {
-            const img = json[i].featured_image_url
-            const name = json[i].title.rendered;
-      
-            sliderItem.innerHTML = `<div class="slider-item slider-show">
-                                    <img src="${img}" class="slide-img" alt="${name}"/>
-                                    <div class="info">
-                                    <h2> ${name} </h2>
-                                    </div>
+
+        movieContainer.innerHTML += `<div class="slide">
+                                    <img src="${images}" class="slide-img" alt="${name}"/>
+                                    <h3>${name}</h3>
                                     </div>`;
-            }
+        
+    });
 
-            const img = json[i].featured_image_url
-            const name = json[i].title.rendered;
-      
-            sliderItem.innerHTML = `<div class="slider-item slider-show">
-                                    <img src="${img}" class="slide-img" alt="${name}"/>
-                                    <div class="info">
-                                    <h2> ${name} </h2>
-                                    </div>
-                                    </div>`;
+    const slides = document.querySelectorAll(".slide");
+    const nextBtn = document.querySelector(".nextBtn");
+    const prevBtn = document.querySelector(".prevBtn");
 
-            else {
-            sliderItem2.innerHTML = `<div class="slider-item">
-                                    <img src="${img}" class="slide-img" alt="${name}"/>
-                                    <div class="info">
-                                    <h2> ${name} </h2>
-                                    </div>
-                                    </div>`;
-            }
-        }   
-    }catch (error) {
-        console.log(error); 
-    }   
-}    
-fetchApi();
+    slides.forEach(function(slide,index){
+        slide.style.left = `${index * 100}%`;
+    });
+
+    let counter = 0;
+
+    nextBtn.addEventListener("click",function(){
+    counter++;
+    carousel();
+    });
+    prevBtn.addEventListener("click",function(){
+    counter--;
+    carousel();
+    });
+
+    function carousel () {
+        //slides
+    
+    if(counter === slides.length){
+    counter = 0;
+    }
+    if(counter < 0 ) {
+    counter = slides.length - 1;
+        }
+    
+    slides.forEach(function(slide){
+    slide.style.transform = `translateX(-${counter * 100}%)`
+    });
+}
+}
+
+getProduct();
