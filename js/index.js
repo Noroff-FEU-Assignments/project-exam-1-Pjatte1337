@@ -1,4 +1,4 @@
-const url = "http://www.joakimvanebo.one/wp-json/wp/v2/posts?per_page=6";
+const url = "https://www.joakimvanebo.one/wp-json/wp/v2/posts?per_page=6";
 
 const movieContainer = document.querySelector(".slider-container");
 
