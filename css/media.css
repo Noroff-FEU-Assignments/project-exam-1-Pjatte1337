@@ -12,7 +12,6 @@ body {
 }
 
 .container {
-    background-color: #fff;
     min-height: calc(100vh - 50px);
     color: #010202;
     display: flex;
@@ -34,7 +33,7 @@ header {
     align-items: center;
     padding: 20px 20px;
     z-index: 10;
-    background: #440e70;
+    background: #d50505;
 }
 
 header .navigation {
@@ -57,6 +56,7 @@ header .navigation li a {
     color: #ffffff;
     text-decoration: none;
     font-weight: 500;
+    font-weight: bold;
     letter-spacing: 1px;
 }
 
@@ -68,7 +68,7 @@ header .navigation li a {
 }
 
 header .navigation li a:hover {
-    color: #3fef68;
+    color: #000000;
 }
 
 
@@ -83,7 +83,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #440e70;
+    background: #d50505;
 }
   
 footer .social_icon,
@@ -110,9 +110,10 @@ footer .menu li a {
     transition: 0.5s;
     text-decoration: none;
     opacity: 0.75;
+    font-weight: bold;
 }
 
 footer .menu li a:hover {
     opacity: 1;
-    color: #3fef68;
+    color: #000000;
 }

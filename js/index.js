@@ -1,22 +1,26 @@
 const url = "https://www.joakimvanebo.one/wp-json/wp/v2/posts?per_page=6";
 
-const movieContainer = document.querySelector(".slider-container");
+const slider = document.querySelector(".slider-container");
 
-async function getProduct(){
+async function FetchApi(){
     const response = await fetch(url);
-    const products = await response.json();
-    console.log(products);
+    const post = await response.json();
+    console.log(post);
 
-    movieContainer.innerHTML =" ";
+    slider.innerHTML =" ";
 
-    products.forEach(movie => {
-        const images = movie.featured_image_url;
-        const name = movie.title.rendered;
+    post.forEach(posts => {
+        const images = posts.featured_image_url;
+        const name = posts.title.rendered;
+        const id = posts.id;
 
 
-        movieContainer.innerHTML += `<div class="slide">
+        slider.innerHTML += `<div class="slide">
                                     <img src="${images}" class="slide-img" alt="${name}"/>
                                     <h3>${name}</h3>
+                                    <a href="./blog-specific.html?id=${id}">
+                                    <button class="readBtn">Read More</button>
+                                    </a>
                                     </div>`;
         
     });
@@ -56,4 +60,4 @@ async function getProduct(){
 }
 }
 
-getProduct();
+FetchApi();
