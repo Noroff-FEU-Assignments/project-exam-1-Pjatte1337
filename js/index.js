@@ -1,4 +1,4 @@
-const url = "https://www.joakimvanebo.one/wp-json/wp/v2/posts?per_page=6";
+const url = "http://www.joakimvanebo.one/wp-json/wp/v2/blogs?acf_format=standard";
 
 const slider = document.querySelector(".slider-container");
 
@@ -10,7 +10,7 @@ async function FetchApi(){
     slider.innerHTML =" ";
 
     post.forEach(posts => {
-        const images = posts.featured_image_url;
+        const images = posts.acf.featured_image;
         const name = posts.title.rendered;
         const id = posts.id;
 

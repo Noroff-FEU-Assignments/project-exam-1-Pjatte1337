@@ -1,0 +1,17 @@
+.content {
+    padding: 1rem;
+    background: #b3bfc2;
+    border: 3px solid #24b5da;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items:center ;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
+    width: 900px;
+    height: auto;
+    box-shadow: 2px 2px 4px #283538,
+    -2px -2px 4px #283538;  
+}
