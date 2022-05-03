@@ -1,5 +1,6 @@
-const url = "http://www.joakimvanebo.one/wp-json/wp/v2/blogs2/?acf_format=standard"
+const url = "http://www.joakimvanebo.one/wp-json/wp/v2/blogs2?acf_format=standard";
 const postContainer = document.querySelector(".container1");
+const perPage = document.querySelector(".more-per-page");
 
 async function getPost (url) {
     const response = await fetch(url)
@@ -10,7 +11,7 @@ async function getPost (url) {
 
     post.forEach(post => {
        const name = post.title.rendered;
-       const img = post.featured_image_url;
+       const img = post.acf.featured_image;
        const id = post.id;
 
        postContainer.innerHTML += `<div class="post"> 
@@ -23,3 +24,9 @@ async function getPost (url) {
     });
 }
 getPost(url);
+
+perPage.onclick = function() {
+    const newUrl = url + "&per_page=12"
+    postContainer.innerHTML = "";
+    getPost(newUrl);
+}

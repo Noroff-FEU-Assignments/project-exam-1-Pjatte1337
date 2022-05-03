@@ -1,4 +1,4 @@
-const url = "http://www.joakimvanebo.one/wp-json/wp/v2/blogs?acf_format=standard";
+const url = "http://www.joakimvanebo.one/wp-json/wp/v2/blogs2?acf_format=standard&per_page=6";
 
 const slider = document.querySelector(".slider-container");
 
@@ -25,6 +25,7 @@ async function FetchApi(){
         
     });
 
+    //slider
     const slides = document.querySelectorAll(".slide");
     const nextBtn = document.querySelector(".nextBtn");
     const prevBtn = document.querySelector(".prevBtn");
