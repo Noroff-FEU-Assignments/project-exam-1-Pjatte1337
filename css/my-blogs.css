@@ -102,5 +102,28 @@
     font-weight: bold;
   }
 
+/* Headliner */
+.head {
+    background-color: #ffff;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+.head h1, p {
+    font-family:'Oswlad', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    position: relative;
+    top: 50%;
+}
+
+.head p {
+    font-style: italic;
+}
+
+
 
 
