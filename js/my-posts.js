@@ -13,12 +13,16 @@ async function getPost (url) {
        const name = post.title.rendered;
        const img = post.acf.featured_image;
        const id = post.id;
+       const prev = post.acf.prevtext;
+       const author = post.acf.author;
 
-       postContainer.innerHTML += `<div class="post"> 
+       postContainer.innerHTML += ` <div class="post"> 
                                     <h2>${name}</h2>
-                                    <img src="${img}" class="movie-img" alt="${name}"/>
+                                    <img src="${img}" class="post-img" alt="${name}"/>
+                                    <p class="prev">${prev}</p>
+                                    <p class="author"> ${author} </p>
                                     <a href="./blog-specific.html?id=${id}">
-                                    <button class="readBtn">Read More</button>
+                                    <button class="readmoreBtn">Read More</button>
                                     </a>
                                     </div>`
     });
