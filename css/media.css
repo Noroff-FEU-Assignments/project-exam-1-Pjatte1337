@@ -2,7 +2,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     /*overflow-x:hidden; */
-    background-color: #ffffff;
+    background-color: #000000;
 }
 
 * {
@@ -19,6 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 }
 
 /* ===== Loader ===== */ 
@@ -41,24 +42,24 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px 20px;
+    padding: 40px 0px;
     z-index: 10;
-    background: #d50505;
+    background: url(../img/head.png);
+    background-size: cover;
 }
 
 header .navigation {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 10px 0;
+    margin: 20px 0;
     position: relative;
-    top: 0;
-    left: 0;
+    left: 250px;
 }
 
 header .navigation li {
     list-style: none;
-    margin: 0 30px;
+    margin: 0 20px;
     text-align: center;
 }
 
@@ -93,7 +94,8 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #d50505;
+    background: url(../img/head.png);
+    background-size: cover;
 }
   
 footer .social_icon,

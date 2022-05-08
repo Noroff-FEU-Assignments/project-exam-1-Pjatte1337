@@ -40,19 +40,19 @@ function createHTML(content) {
 
     contentContainer.innerHTML =    `<div class="content">
                                     <h2 class="headline">${headline}</h2>
-                                    <img src="${img1}" class="firstImg" alt="${headline}"/>
+                                    <img src="${img1}" class="image-one" alt="${headline}"/>
                                     <p class="paragraph-one">${paragraph1}</p>
                                     <p class="paragraph-two">${paragraph2}</p>
-                                    <img src="${img2}" class="firstImg" alt="${headline}"/>
-                                    <img src="${img3}" class="firstImg" alt="${headline}"/>
-                                    <img src="${img5}" class="firstImg" alt="${headline}"/>
+                                    <img src="${img2}" class="image-two" alt="${headline}"/>
+                                    <img src="${img3}" class="image-three" alt="${headline}"/>
+                                    <img src="${img5}" class="image-four" alt="${headline}"/>
                                     <p class="paragraph-three">${paragraph3}</p>
-                                    <img src="${img4}" class="firstImg" alt="${headline}"/>
+                                    <img src="${img4}" class="image-five" alt="${headline}"/>
                                     <p class="paragraph-four">${paragraph4}</p>
                                     <p class="paragraph-five">${paragraph5}</p>
-                                    <p class="score">${score}</p>
-                                    <p class="lineup-one">${lineup1}</p>
-                                    <p class="lineup-two">${lineup2}</p>
+                                    <p class="score"> ${score}</p>
+                                    <p class="lineup-one"> ${lineup1}</p>
+                                    <p class="lineup-two"> ${lineup2}</p>
                                     </div>`
 
 }
