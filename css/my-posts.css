@@ -45,8 +45,8 @@
 /* Content */
 .post {
     padding: 1rem;
-    background: #000;
-    border: 3px solid #d50505;
+    background: rgb(120, 119, 119);
+    border: 3px solid #13520c;
     border-radius: 1rem;
     justify-content: center;
     align-items:center ;
@@ -60,7 +60,7 @@
 }
 
 .post h2 {
-    color: #d50505;
+    color: #fff;
     margin: 7.5px;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .prev {
-    color: #d50505;
+    color: #fff;
     width: 80%;
     margin: 7.5px;
     position: relative;
@@ -86,35 +86,40 @@
 .readmoreBtn{
     position: relative;
     top: 0px;
-    background-color: #d50505;
-    color: #fff;
+    background-color: #fff;
+    color: #13520c;
     border-radius: 10px;
     text-transform: uppercase;
     padding: 5px 35px;
     text-transform: uppercase;
     font-size: 14px;
-    border: 2px solid #ffffff;
+    border: 2px solid #13520c;
     cursor: pointer;
     margin: 7.5px;
+    font-weight: bold;
 }
 
 .more-per-page {
-    background-color: #d50505;
-    color: #fff;
+    background-color: #fff;
+    color: #13520c;
     border-radius: 10px;
     text-transform: uppercase;
     padding: 20px 70px;
     text-transform: uppercase;
     font-size: 14px;
-    border: 2px solid #ffffff;
+    border: 3px solid #13520c;
     cursor: pointer;
     margin: 7.5px;
+    font-weight: bold;
+    box-shadow: 0px 0px 13px 2px #13520c;;
 }
 
 .readmoreBtn:hover, .more-per-page:hover {
-    color: #000;
-    border: 2px solid #000;
-    box-shadow: 0px 0px 13px 2px #d50505;;
+    color: #fff;
+    background-color: #13520c;
+
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 13px 2px #13520c;;
 }
 
 
