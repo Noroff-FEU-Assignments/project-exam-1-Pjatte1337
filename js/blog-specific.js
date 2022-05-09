@@ -4,7 +4,7 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 console.log(id);
 
-const url = `http://www.joakimvanebo.one/wp-json/wp/v2/blogs2/${id}?acf_format=standard`;
+const url = `https://www.joakimvanebo.one/wp-json/wp/v2/blogs2/${id}?acf_format=standard`;
 console.log(url);
 
 async function fetchContent() {

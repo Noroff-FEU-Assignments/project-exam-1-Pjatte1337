@@ -1,4 +1,4 @@
-const url = "http://www.joakimvanebo.one/wp-json/wp/v2/blogs2?acf_format=standard&per_page=6";
+const url = "https://www.joakimvanebo.one/wp-json/wp/v2/blogs2?acf_format=standard&per_page=6";
 
 const slider = document.querySelector(".slider-container");
 

@@ -1,4 +1,4 @@
-const url = "http://www.joakimvanebo.one/wp-json/wp/v2/blogs2?acf_format=standard";
+const url = "https://www.joakimvanebo.one/wp-json/wp/v2/blogs2?acf_format=standard";
 const postContainer = document.querySelector(".container1");
 const perPage = document.querySelector(".more-per-page");
 
