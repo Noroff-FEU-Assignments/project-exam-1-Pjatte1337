@@ -5,7 +5,7 @@
     text-align: center;
     justify-content: center;
     position: absolute;
-    top: 9%;
+    top: 15%;
 }
 
 .head h1, p {
@@ -27,7 +27,7 @@
     margin: 240px auto;
     display: flex;
     flex-wrap: wrap;
-    top: -5%;
+    top: 4%;
    
 }
 
@@ -139,7 +139,7 @@ cursor: pointer;
     align-items: center;
     justify-content: space-around;
     position: absolute;
-    top: 85%;
+    top: 90%;
 }
 
 .logo {

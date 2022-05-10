@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="homepage" content="The homepage for Music4Life">
     <title>Football4People Contact</title>
+    <link href="css/contact.css" rel="stylesheet"/>
     <link href="css/media.css" rel="stylesheet"/>
     <script>
     /* === Hotjar === */
@@ -21,8 +22,46 @@
     </ul>
 </header>
 <body>
-    <div id="preloader"></div>
+    
     <div class="container">
+
+        <div class="head">
+            <h1>Get in touch with me</h1>
+        </div>
+
+
+        <div class="wrapper">
+            <h2>Contact us</h2>
+            <div id="error_message"></div>
+
+            <form id="myform" onsubmit="return validation()">
+                <div class="input-field">
+                    <input type="text" id="firstname" placeholder="First Name">
+                </div>
+                <div class="input-field">
+                  <input type="text" id="lastname" placeholder="Last Name">
+                </div>
+                <div class="input-field">
+                    <input type="text" id="subject" placeholder="Subject">
+                </div>
+                <div class="input-field">
+                    <input type="text" id="email" placeholder="Email">
+                </div>
+                <div class="input-field">
+                    <textarea type="message" id="message" placeholder="Message"></textarea>
+                </div>
+
+                <div class="btn">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+
+
+        <div class="map">
+
+        </div>
+
     </div>
     <footer>
         <ul class="menu">
@@ -32,6 +71,6 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </footer>
-    <script src="js/loader.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>

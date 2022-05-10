@@ -1,4 +1,5 @@
 const contentContainer = document.querySelector(".container");
+const modalz = document.querySelector(".modalz");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
@@ -6,6 +7,7 @@ console.log(id);
 
 const url = `https://www.joakimvanebo.one/wp-json/wp/v2/blogs2/${id}?acf_format=standard`;
 console.log(url);
+
 
 async function fetchContent() {
     try {
@@ -18,6 +20,8 @@ async function fetchContent() {
 
     }catch(error){
     }
+
+    
 } 
 fetchContent ();
 
@@ -57,4 +61,3 @@ function createHTML(content) {
                                     `
 
 };
-

@@ -66,7 +66,7 @@ img {
     position: absolute;
     top: 5%;
     border: 3px solid #fff;
-    box-shadow: 0px 0px 13px 2px #13520c;;
+    box-shadow: 0px 0px 13px 2px #13520c;
 
 }
 
@@ -76,9 +76,9 @@ img {
     border-radius: 1rem;
     position: absolute;
     top: 950px;
-    left: 250px;
+    left: 200px;
     border: 3px solid #fff;
-    box-shadow: 0px 0px 13px 2px #13520c;;
+    box-shadow: 0px 0px 13px 2px #13520c;
 }
 
 .image-three {
@@ -87,7 +87,7 @@ img {
     border-radius: 1rem;
     position: absolute;
     top: 950px;
-    left: 600px;
+    left: 550px;
     border: 3px solid #fff;
     box-shadow: 0px 0px 13px 2px #13520c;;
 }
@@ -98,7 +98,7 @@ img {
     border-radius: 1rem;
     position: absolute;
     top: 950px;
-    left: 950px;
+    left: 890px;
     border: 3px solid #fff;
     box-shadow: 0px 0px 13px 2px #13520c;;
 }
@@ -145,4 +145,7 @@ img {
     font-size: 45px;
     position: absolute;
 }
+
+
+
 
