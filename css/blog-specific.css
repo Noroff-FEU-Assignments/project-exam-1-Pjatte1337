@@ -1,57 +1,120 @@
 /* Content container */
-.content {
+.blog-content {
     padding: 1rem;
     background: #fff;
     border-radius: 1rem;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
     position: relative;
     margin: 1rem;
-    width: 1400px;
+    max-width: auto;
     height: 2500px;
-    margin: 100px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
+.headline {
+    height: 75px;
+    width: auto;
+    font-size: 45px;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
 
-/* Paragraph */
-.paragraph-one {
-    width: 800px;
+.top {
+    padding: 1rem;
+    background: #fff;
+    border-radius: 1rem;
+    position: relative;
+    margin: 1rem;
+    width: auto;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.image-one {
+    width: 1000px;
     height: 600px;
-    position: absolute;
-    top: 750px;
+    border-radius: 1rem;
+    position: relative;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 13px 2px #13520c;
 }
 
-.paragraph-two {
-    width: 800px;
-    height: 600px;
-    position: absolute;
-    top: 850px;
-}
-
-.paragraph-three {
-    width: 800px;
-    height: 600px;
-    position: absolute;
-    top: 1300px;
-}
-
-.paragraph-four {
-    width: 800px;
-    height: 600px;
-    position: absolute;
-    top: 2000px;
-}
-
-.paragraph-five {
-    width: 800px;
-    height: 600px;
-    position: absolute;
-    top: 2100px;
+.headline-two {
+    height: 75px;
+    width: auto;
+    font-size: 25px;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content-one {
+    background-color: rgb(106, 106, 196);
+    width: auto;
+    height: auto;
+    margin: 0px;
+}
+
+.content-two {
+    background-color: rgb(93, 93, 209);
+    width: auto;
+    height: auto;
+    margin: 0px;
+}
+
+.content-three {
+    background-color: rgb(14, 14, 236);
+    width: auto;
+    height: auto;
+    margin: 0px;
+}
+
+.content-four {
+    background-color: rgb(172, 42, 42);
+    width: auto;
+    height: auto;
+    margin: 0px;
+    display: table-row;
+}
+
+.content-five {
+    background-color: rgb(142, 243, 159);
+    width: auto;
+    height: auto;
+    margin: 0px;
+    display: table-row;
+}
 
 /* Images */
 
@@ -59,58 +122,31 @@ img {
     cursor: pointer;
 }
 
-.image-one {
-    width: 1000px;
-    height: 600px;
-    border-radius: 1rem;
-    position: absolute;
-    top: 5%;
-    border: 3px solid #fff;
-    box-shadow: 0px 0px 13px 2px #13520c;
 
-}
 
-.image-two {
+.image-two,
+.image-three,
+.image-four  {
     width: 300px;
     height: 300px;
     border-radius: 1rem;
-    position: absolute;
-    top: 950px;
-    left: 200px;
-    border: 3px solid #fff;
-    box-shadow: 0px 0px 13px 2px #13520c;
+    margin: 50px;
 }
 
-.image-three {
-    width: 300px;
-    height: 300px;
-    border-radius: 1rem;
-    position: absolute;
-    top: 950px;
-    left: 550px;
-    border: 3px solid #fff;
-    box-shadow: 0px 0px 13px 2px #13520c;;
-}
 
-.image-four {
-    width: 300px;
-    height: 300px;
-    border-radius: 1rem;
-    position: absolute;
-    top: 950px;
-    left: 890px;
-    border: 3px solid #fff;
-    box-shadow: 0px 0px 13px 2px #13520c;;
-}
+
+
+
+
+
+
+
 
 .image-five {
-    width: 1000px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     border-radius: 1rem;
-    position: absolute;
-    top: 1400px;
-    border: 3px solid #fff;
-    box-shadow: 0px 0px 13px 2px #13520c;;
+    margin: 50px;
 }
 
 
@@ -118,34 +154,35 @@ img {
 .score {
     width: 600px;
     height: 600px;
-    position: absolute;
-    top: 2250px;
-    left: 600px;
+    position: relative;
 }
 
 .lineup-one {
-    width: 1200px;
+    width: 600px;
     height: 600px;
-    position: absolute;
-    top: 2350px;
-    left: 250px;
-    font-weight: bold;
+    position: relative;
 }
 
 .lineup-two {
-    width: 1200px;
+    width: 600px;
     height: 600px;
-    position: absolute;
-    top: 2400px;
-    left: 250px;
-    font-weight: bold;
-}
-
-.headline {
-    font-size: 45px;
-    position: absolute;
+    position: relative;
 }
 
 
+/* div */
 
+.paragraph-one, 
+.paragraph-two,
+.paragraph-three,
+.paragraph-four
+.paragraph-five,
+.paragraph-six {
+    margin: 50px;
+}
 
+.score,
+.lineup-one,
+.lineup-two {
+    margin: 50px;
+}

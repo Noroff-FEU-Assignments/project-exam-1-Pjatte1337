@@ -39,3 +39,33 @@ function validation() {
     alert("Form Submitted Succesfully!")
     return true;
 };
+
+
+<div class"content-one"> 
+<h2 class="headline">${title}</h2>
+<p class="paragraph-one">${paragraph1}</p>
+<p class="paragraph-two">${paragraph2}</p>
+</div>
+
+<div class"content-two"> 
+<img src="${img2}" id="modalz" class="image-two" alt="${headline}"/>
+<img src="${img3}" id="modalz" class="image-three" alt="${headline}"/>
+<img src="${img5}" id="modalz" class="image-four" alt="${headline}"/>
+</div>
+
+<div class"content-three"> 
+<p class="paragraph-three">${paragraph3}</p>
+<p class="paragraph-four">${paragraph4}</p>
+</div>
+
+<div class"content-four"> 
+<img src="${img4}" id="modalz" class="image-five" alt="${headline}"/>
+<p class="paragraph-five">${paragraph5}</p>
+<p class="paragraph-six">${paragraph6}</p>
+</div>
+
+<div class"content-five"> 
+<p class="score"> ${score}</p>
+<p class="lineup-one"> ${lineup1}</p>
+<p class="lineup-two"> ${lineup2}</p>
+</div>
