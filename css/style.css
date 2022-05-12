@@ -25,7 +25,7 @@ body {
 
 /* ===== Loader ===== */ 
 #preloader {
-    background: #000 url(../img/loading.gif) no-repeat center center;
+    background: #000 url(../img/progress-loading-bar-buffering-download-upload-and-loading-icon-vector.jpg) no-repeat center center;
     background-size: 30%;
     height: 100vh;
     width: 100%;
@@ -130,8 +130,8 @@ footer .menu li a:hover {
     color: #000000;
 }
 
-
-
+ 
+/*Specific*/
 
 
 /* ===== Media query ===== */ 
@@ -191,6 +191,16 @@ footer .menu li a:hover {
     .readBtn {
         top: -150px;
     }
+    /*Specific*/
+    .blog-content {
+        margin: 0;
+        width: 992px;
+    }
+    .image-five {
+        margin: 0;
+        width: 890px;
+        left: -50px;
+    }
 }
 
 
@@ -236,6 +246,26 @@ footer .menu li a:hover {
     }
     iframe {
         max-width: 800px;
+    }
+    /*Specific*/
+    .blog-content {
+        margin: 0;
+        width: 900px;
+    }
+    .image-one {
+        margin: 0;
+        width: 800px;
+    }
+    .image-five {
+        margin: 0;
+        width: 800px;
+        left: 0px;   
+    }
+    .image-two,
+    .image-three,
+    .image-four  {
+        width: 225px;
+        height: 200px;
     }
 }
 
@@ -283,6 +313,51 @@ footer .menu li a:hover {
     iframe {
         max-width: 678px;
     }
+    /*Specific*/
+    .blog-content {
+        margin: 0;
+        width: 768px;
+    }
+    .headline {
+        font-size: 35px;
+    }
+
+    .headline-two {
+        font-size: 19px;
+    }
+    .image-one {
+        margin: 0;
+        width: 700px;
+        height: 400px;
+        left: -15px;
+    }
+    .image-five {
+        margin: 0;
+        width: 650px;
+        left: -25px;   
+        height: 350px;
+    }
+    .image-two,
+    .image-three,
+    .image-four  {
+        width: 190px;
+        height: 200px;
+    }
+
+    .content-one,
+    .content-three,
+    .content-four,
+    .content-five {
+        width: 600px;
+    }
+
+    .score,
+    .lineup-one,
+    .lineup-two {
+    margin-top: 25px;
+    font-weight: bold;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -327,5 +402,41 @@ footer .menu li a:hover {
     iframe {
         max-width: 500px;
     }
+
+    /*Specific*/
+    .blog-content {
+        margin: 0;
+        width: 600px;
+    }
+    .headline {
+        font-size: 35px;
+    }
+
+    .headline-two {
+        font-size: 19px;
+    }
+
+    .image-one {
+        width: 500px;
+        height: 350px;
+        left: 0px;
+    }
+    .image-five {
+        width: 500px;
+        height: 250px;
+        left: 0px;
+    }
+    .image-two,
+    .image-three,
+    .image-four  {
+        width: 135px;
+        height: 170px;
+    }
     
+    .content-one,
+    .content-three,
+    .content-four,
+    .content-five {
+        width: 500px;
+    }
 }

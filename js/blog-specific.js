@@ -69,12 +69,12 @@ function createHTML(content) {
                                     </div>
 
                                     <div class="content-four"> 
-                                    <img src="${img4}" id="modalz" class="image-five" alt="${headline}"/>
+                                    <img src="${img5}" id="modalz" class="image-five" alt="${headline}"/>
                                     <p class="paragraph-five">${paragraph5}</p>
                                     <p class="paragraph-six">${paragraph6}</p>
                                     </div>
 
-                                    <div class="content-four"> 
+                                    <div class="content-five"> 
                                     <p class="score"> ${score}</p>
                                     <p class="lineup-one"> ${lineup1}</p>
                                     <p class="lineup-two"> ${lineup2}</p>
