@@ -12,6 +12,7 @@ body {
 }
 
 
+
 .container {
     min-height: calc(100vh - 50px);
     color: #010202;
@@ -267,6 +268,11 @@ footer .menu li a:hover {
         width: 225px;
         height: 200px;
     }
+    /*dropdown*/
+    header .dropdown-menu {
+        display: block;
+    }
+
 }
 
 
@@ -409,7 +415,7 @@ footer .menu li a:hover {
         width: 600px;
     }
     .headline {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .headline-two {
@@ -439,4 +445,92 @@ footer .menu li a:hover {
     .content-five {
         width: 500px;
     }
+}
+
+
+
+
+
+/* dropdown-menu */
+ .dropdown-menu {
+    position: relative;
+    display: none;
+    height: 45px;
+    width: 200px;
+    border-radius: 10px;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #13520c;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid #fff;
+}
+ .dropdown-menu ul {
+    list-style: none;
+    font-size: 1rem;
+}
+
+ .dropdown-menu a {
+    color: #13520c;
+    text-decoration: none;
+}
+
+ .dropdown-menu a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+ .dropdown {
+    position: absolute;
+    width: 200px;
+    color: #fff;
+
+}
+
+ .dropdown li {
+    display: none;
+    opacity: 0;
+    background-color: #fff;
+    transition: color .3s;
+}
+
+ .dropdown li:hover {
+    background: #13520c;
+    color: #fff;
+
+}
+
+ .dropdown-menu:hover .dropdown li {
+    display: block;
+    animation: animation .5s forwards;
+}
+
+@keyframes animation {
+    from {
+        opacity: 0;
+        transform: translate(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+ .dropdown.menu .dropdown li:nth-last-child(1) {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+ .dropdown-menu:hover .dropdown li:nth-child(2) {
+    animation-delay: .2s;
+}
+
+ .dropdown-menu:hover .dropdown li:nth-child(3) {
+    animation-delay: .4s;
+}
+
+ .dropdown-menu:hover .dropdown li:nth-child(4) {
+    animation-delay: .6s;
 }
