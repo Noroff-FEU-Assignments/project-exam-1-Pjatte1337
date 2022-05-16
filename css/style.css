@@ -12,7 +12,7 @@ body {
 }
 
 
-
+/* kan fjernes ? */ 
 .container {
     min-height: calc(100vh - 50px);
     color: #010202;
@@ -23,6 +23,18 @@ body {
     flex-direction: column;
     max-width: 100%;
 }
+
+main {
+    min-height: calc(100vh - 50px);
+    color: #010202;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+}
+
 
 /* ===== Loader ===== */ 
 #preloader {
