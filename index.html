@@ -7,8 +7,8 @@
     <meta name="homepage" content="The homepage for Music4Life">
     <title>Football4People</title>
     <script src="https://kit.fontawesome.com/92064f7d65.js" crossorigin="anonymous"></script>
-    <link href="css/index.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/media.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
@@ -35,11 +35,14 @@
             <li class="menu-list-item"><a href="contact.html">Contact</a></li>
         </ul>
     </header>
-    <div id="preloader"></div>
-    <div class="container">
-        <div class="head">
-            <h1>WELCOME TO FOOTBALL4PEOPLE</h1>
-            <p>"A blog for people that love football"</p>
+    <main>
+        <section class="head">
+            <div class="title">
+                <h1>WELCOME TO FOOTBALL4PEOPLE</h1>
+                <p>"A blog for people that love football"</p>
+            </div>
+        </section>
+        <section class="top-content">
             <img src="img/content.jpg" class="content-img" alt="header images for content" />
             <div class="modal">
                 <div class="modal-content">
@@ -47,29 +50,31 @@
                     <img src="img/content.jpg" class="modal-img" alt="header images for content" />
                 </div>
             </div>
-        </div>
-        <div class="content">
-            <h2>Get News And Result From Worldwide Leagues</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem architecto tempora qui perferendis distinctio asperiores</p>
-        </div>
-        <div class="sliderbox">
-            <div class="latest">
-                <h3>Latest Post</h3>
+        </section>
+        <section class="homepage-content">
+            <div class="text-content">
+                <h2>Get News And Result From Worldwide Leagues</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem architecto tempora qui perferendis distinctio asperiores</p>
             </div>
-            <div class="slider-container">
-                <div class="slide">
+            <div class="sliderbox">
+                <div class="latest">
+                    <h3>Latest Post</h3>
+                </div>
+                <div class="slider-container">
+                    <div class="slide">
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <button type="button" class="prevBtn">
+                        <i class="fa-solid fa-arrow-left-long"></i>Prev
+                    </button>
+                    <button type="button" class="nextBtn">
+                        Next<i class="fa-solid fa-arrow-right-long"></i>
+                    </button>
                 </div>
             </div>
-            <div class="btn-container">
-                <button type="button" class="prevBtn">
-                    <i class="fa-solid fa-arrow-left-long"></i>Prev
-                </button>
-                <button type="button" class="nextBtn">
-                    Next<i class="fa-solid fa-arrow-right-long"></i>
-                </button>
-            </div>
-        </div>
-    </div>
+        </section>
+    </main>
     <footer>
         <ul class="menu">
             <li><a href="index.html">Home</a></li>

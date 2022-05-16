@@ -1,5 +1,5 @@
 const url = "https://www.joakimvanebo.one/wp-json/wp/v2/blogs2?acf_format=standard";
-const postContainer = document.querySelector(".container1");
+const postContainer = document.querySelector(".container-show");
 const perPage = document.querySelector(".more-per-page");
 
 async function getPost (url) {
