@@ -22,7 +22,7 @@ function validation() {
         return false;
     }
     if (subject.length < 15) {
-        text = "Please Enter min 15 characters";
+        text = "Subject must have minimum 15 characters";
         error_message.innerHTML = text;
         return false;
     }
@@ -32,7 +32,7 @@ function validation() {
         return false;
     }
     if ( message.length < 25) {
-        text = "Please Enter Min 25 characters";
+        text = "Message must have minimum 25 characters";
         error_message.innerHTML = text;
         return false;
     }

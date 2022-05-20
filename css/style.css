@@ -27,6 +27,10 @@ main {
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 
 /* ===== Header and Loader ===== */ 
@@ -47,6 +51,8 @@ header {
 header p {
     color: #ff0000;
     font-family: 'Permanent marker';
+    text-decoration: none;
+    font-size: 35px;
 }
 
 header .navigation {
@@ -79,7 +85,9 @@ header .navigation li a {
 }
 
 header .navigation li a:hover {
-    color: #000000;
+    color: #ff0000;
+    border-bottom: 2px solid #ff0000;
+    border-top: 2px solid #ff0000;
 }
 
 
@@ -127,8 +135,9 @@ footer .menu li a {
 }
 
 footer .menu li a:hover {
-    opacity: 1;
-    color: #000000;
+    color: #ff0000;
+    border-bottom: 2px solid #ff0000;
+    border-top: 2px solid #ff0000;
 }
 
 
@@ -197,7 +206,7 @@ footer .menu li a:hover {
     height: 500px;
     width: 950px;
     border-radius: 10px;
-    box-shadow: 0px 0px 13px 2px #13520c;;
+    border: 2px solid #fff;
     cursor: pointer;
 }
 
@@ -242,7 +251,6 @@ footer .menu li a:hover {
 }
 /* slider */
 .slider-container {
-    border: 3px solid #13520c;
     width: 990px;
     margin-bottom: 20px;
     height: 500px;
@@ -251,7 +259,7 @@ footer .menu li a:hover {
     position: relative;
     top: 5px;
     left: 0px;
-    box-shadow: 0px 0px 13px 2px #13520c;;
+    border: 2px solid #ffffff;
     display: inline-flex;
 }
 
@@ -273,33 +281,11 @@ footer .menu li a:hover {
 .slide h3 {
     font-size: 25px;
     width: 100%;
-    background: #fff;
-    color: #13520c;
-    border: 2px solid #13520c;
+    background: #000;
+    color: #ffffff;
     border-radius: 0.5rem;
 }
 
-.readBtn {
-    display: none;
-    position: relative;
-    top: -200px;
-    background-color: #fff;
-    color: #13520c;
-    border-radius: 10px;
-    text-transform: uppercase;
-    padding: 5px 35px;
-    font-size: 14px;
-    border: 2px solid #13520c;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.readBtn:hover {
-    color: #fff;
-    background: #13520c;
-    border: 2px solid #fff;
-    display: flex;
-}
 
 .slide:nth-child(1) h3 {
     position: absolute;
@@ -540,40 +526,38 @@ footer .menu li a:hover {
 .readmoreBtn{
     position: relative;
     top: 0px;
-    background-color: #fff;
-    color: #13520c;
+    background-color: #000;
+    color: #ff0000;
     border-radius: 10px;
     text-transform: uppercase;
     padding: 5px 35px;
     text-transform: uppercase;
     font-size: 14px;
-    border: 2px solid #13520c;
+    border: 2px solid #fff;
     cursor: pointer;
     margin: 7.5px;
     font-weight: bold;
 }
 
 .more-per-page {
-    background-color: #fff;
-    color: #13520c;
+    background-color: #000;
+    color: #ff0000;
     border-radius: 10px;
     text-transform: uppercase;
     padding: 20px 70px;
     text-transform: uppercase;
     font-size: 14px;
-    border: 3px solid #13520c;
+    border: 2px solid #ff0000;
     cursor: pointer;
     margin: 7.5px;
     font-weight: bold;
-    box-shadow: 0px 0px 13px 2px #13520c;;
+    box-shadow: 0px 0px 13px 2px #ff0000;
 }
 
 .readmoreBtn:hover, .more-per-page:hover {
-    color: #fff;
-    background-color: #13520c;
-
-    border: 2px solid #fff;
-    box-shadow: 0px 0px 13px 2px #13520c;;
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0px 0px 13px 2px #fff;
 }
 
 
@@ -594,7 +578,7 @@ footer .menu li a:hover {
     text-align: left;
     justify-content: center;
     position: relative;
-    border-top: 2px solid #13520c;
+    border-top: 2px solid #ff0000;
 }
 
 .about-blog {
@@ -603,7 +587,7 @@ footer .menu li a:hover {
     text-align: left;
     justify-content: center;
     position: relative;
-    border-top: 2px solid #13520c;
+    border-top: 2px solid #ff0000;
 }
 
 .about-want {
@@ -612,8 +596,8 @@ footer .menu li a:hover {
     text-align: left;
     justify-content: center;
     position: relative;
-    border-top: 2px solid #13520c;
-    border-bottom: 2px solid #13520c;
+    border-top: 2px solid #ff0000;
+    border-bottom: 2px solid #ff0000;
 }
 
 .about-content h2 {
@@ -639,7 +623,6 @@ footer .menu li a:hover {
     width: 100%;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0px 0px 13px 2px #13520c;
     border: 2px solid #fff;
 }
 
@@ -672,16 +655,27 @@ footer .menu li a:hover {
     margin-top: 15px;
     padding: 10px;
     width: 100%;
-    background:#13520c ;
-    color: #fff;
+    background:#000 ;
+    color: #ff0000;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: bold;
     border: 10px;
     cursor: pointer;
-    border: 2px solid #fff;
+    border: 2px solid #ff0000;
     border-radius: 10px; 
 }
+
+.wrapper .btn input[type="submit"]:hover {
+    color: #fff;
+    background-color: #13520c;
+    box-shadow: 0px 0px 13px 2px #13520c;
+    font-style: italic;
+    font-weight: bolder;
+    border: 2px solid #fff;
+}
+
+
 
 .wrapper #error_message {
     margin-bottom: 20px;
@@ -845,8 +839,8 @@ iframe {
     line-height: 45px;
     text-align: center;
     cursor: pointer;
-    background-color: #13520c;
-    color: #fff;
+    background-color: #000;
+    color: #ff0000;
     text-transform: uppercase;
     font-weight: bold;
     border: 2px solid #fff;
@@ -857,7 +851,7 @@ iframe {
 }
 
  .dropdown-menu a {
-    color: #13520c;
+    color: #000;
     text-decoration: none;
 }
 
@@ -881,8 +875,8 @@ iframe {
 }
 
  .dropdown li:hover {
-    background: #13520c;
-    color: #fff;
+    background: #000;
+    color: #ff0000;
 
 }
 
