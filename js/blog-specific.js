@@ -3,7 +3,12 @@ const modalz = document.querySelector(".modalz");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
+
+const newTitle = document.querySelector("title");
+
 console.log(id);
+
+newTitle.innerHTML = "";
 
 const url = `https://www.joakimvanebo.one/wp-json/wp/v2/blogs2/${id}?acf_format=standard`;
 console.log(url);
@@ -43,6 +48,7 @@ function createHTML(content) {
     const score = content.acf.score;
     const lineup1 = content.acf.lineup1;
     const lineup2 = content.acf.lineup2;
+    const HTMLTitle = content.acf.name;
 
     contentContainer.innerHTML =    `<div class="blog-content">
                                     <h1 class="headline">${headline}</h1>
@@ -83,6 +89,8 @@ function createHTML(content) {
 
                                     </div>
                                     `
+
+    newTitle.innerHTML += `Calcio || ${HTMLTitle}`;
 
 };
 

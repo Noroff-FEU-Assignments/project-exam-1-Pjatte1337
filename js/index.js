@@ -16,10 +16,9 @@ async function FetchApi(){
 
 
         slider.innerHTML += `<div class="slide">
+                                    <a href="./blog-specific.html?id=${id}">
                                     <img src="${images}" class="slide-img" alt="${name}"/>
                                     <h3>${name}</h3>
-                                    <a href="./blog-specific.html?id=${id}">
-                                    <button class="readBtn">Read More</button>
                                     </a>
                                     </div>`;
         

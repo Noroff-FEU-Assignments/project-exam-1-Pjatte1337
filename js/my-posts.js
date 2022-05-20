@@ -10,7 +10,7 @@ async function getPost (url) {
     postContainer.innerHTML = "";
 
     post.forEach(post => {
-       const name = post.title.rendered;
+       const name = post.acf.name;
        const img = post.acf.featured_image;
        const id = post.id;
        const prev = post.acf.prevtext;
@@ -19,12 +19,12 @@ async function getPost (url) {
        postContainer.innerHTML += ` <div class="post"> 
                                     <h2>${name}</h2>
                                     <img src="${img}" class="post-img" alt="${name}"/>
-                                    <p class="prev">${prev}</p>
-                                    <p class="author"> ${author} </p>
                                     <a href="./blog-specific.html?id=${id}">
                                     <button class="readmoreBtn">Read More</button>
                                     </a>
                                     </div>`
+    
+
     });
 }
 getPost(url);
