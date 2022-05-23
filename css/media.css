@@ -72,12 +72,16 @@
     .about-want {
         width: 80%;
         left: 125px;
+        padding: 50px;
     }
 
     .container-show {
         position: relative;
         left: -10px;
     }
+    .about-content p {
+        font-size: 13px;
+      }
 }
 
 
@@ -147,6 +151,9 @@
         width: 80%;
         left: 100px;
     }
+    .about-content p {
+        font-size: 13px;
+      }
 }
 
 
@@ -221,10 +228,6 @@
         width: 225px;
         height: 200px;
     }
-    .lineup-one,
-    .lineup-two {
-        display: none;
-    }
     /*dropdown*/
     header .dropdown-menu {
         display: block;
@@ -242,6 +245,10 @@
         width: 80%;
         left: 80px;
     }
+
+    .about-content p {
+        font-size: 12px;
+      }
 
 }
 
@@ -280,7 +287,7 @@
     .prevBtn,
     .nextBtn {
         top: 50px;
-        left: 3%;
+        left: 7%;
     }
     .readBtn {
         top: -222px;
@@ -338,7 +345,7 @@
     .score,
     .lineup-one,
     .lineup-two {
-    margin-top: 25px;
+    margin-top: 16px;
     font-weight: bold;
     }
     /* About */
@@ -354,6 +361,9 @@
         left: 80px;
         top: 25px;
     }
+    .about-content p {
+        font-size: 12px;
+      }
 
     .about-want {
         top: 50px;
@@ -455,7 +465,7 @@
 
     .lineup-one,
     .lineup-two {
-        display: none;
+        font-size: 13px;
     }
 
     /*my posts*/
@@ -476,7 +486,7 @@
         left: 50px;
     }
     .about-content p {
-        font-size: 15px;
+        font-size: 11px;
       }
 
       .about-content h2 {
