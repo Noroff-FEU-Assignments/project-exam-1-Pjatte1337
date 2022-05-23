@@ -374,6 +374,36 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ===== Media query 600px===== */ 
 @media screen and (max-width: 600px) {
     /*index*/
@@ -497,3 +527,175 @@
         height: 300px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Media query 600px===== */ 
+@media screen and (max-width: 400px) {
+    /*index*/
+    .head {
+        width: 400px;
+    }
+
+    .title {
+        width: 400px;
+    }
+
+    .top-content {
+        width: 350px;
+        height: 200px;
+    }
+
+    .homepage-content {
+        width: 400px;
+    }
+    .content-img  {
+        width: 350px;
+        height: 200px;
+
+    }
+    .text-content {
+        display: none;
+    }
+    .slider-container {
+        width: 300px;
+        height: 400px;
+    }
+    .slide-img {
+        width: 300px;
+        height: 400px;
+    }
+    .prevBtn,
+    .nextBtn {
+        top: 50px;
+        left: 15%;
+    }
+
+    /*Contact*/
+    .wrapper {
+        max-width: 350px;
+    }
+    iframe {
+        max-width: 350px;
+    }
+
+    /*Specific*/
+    .blog-content {
+        margin: 0;
+        width: 400px;
+    }
+    .headline {
+        font-size: 15px;
+    }
+
+    .headline-two {
+        font-size: 15px;
+    }
+
+    .image-one {
+        width: 250px;
+        height: 250px;
+        left: 0px;
+    }
+    .image-five {
+        width: 300px;
+        height: 250px;
+        left: 0px;
+       
+    }
+    .image-two,
+    .image-three {
+        width: 135px;
+        height: 170px;
+        margin: 10px;
+    }
+
+    .image-four {
+        display: none;
+        
+    }
+    
+    .content-one,
+    .content-three,
+    .content-four,
+    .content-five {
+        width: 350px;
+        justify-content: center;
+    }
+
+    .paragraph-one, 
+    .paragraph-two,
+    .paragraph-three,
+    .paragraph-four,
+    .paragraph-five,
+    .paragraph-six {
+    margin-top: 1px;
+    text-align: center;
+    }
+
+
+    .lineup-one,
+    .lineup-two {
+        display: none;
+    }
+
+    /*my posts*/
+    .container-show,
+    .container-show-more {
+        width: 400px;
+    }
+    /* About */
+    .about-content{
+        width: 400px;
+    }
+
+    .about-me,
+    .about-blog,
+    .about-want {
+        width: 350PX;
+        height: 250px;
+        position: relative;
+        left: 25px;
+    }
+    .about-content p {
+        font-size: 8px;
+      }
+
+      .about-content h2 {
+        font-size: 25px;
+      }
+      .about-want {
+        top: 50px;
+        height: 300px;
+    }
+}
+
