@@ -141,14 +141,14 @@ footer .menu li a:hover {
 
 
 /* ===== Loader ===== */ 
-/*#preloader {
-    background: #000 url(../img/progress-loading-bar-buffering-download-upload-and-loading-icon-vector.jpg) no-repeat center center;
+#preloader {
+    background: #000 url(../img/loading.gif) no-repeat center center;
     background-size: 30%;
     height: 100vh;
     width: 100%;
     position: fixed;
     z-index: 100;
-} */
+} 
 
 
 
