@@ -270,6 +270,7 @@
     .text-content {
         width:400px;
         left: 180px;
+        position: relative;
     }
     .content-img  {
         height: 400px;
