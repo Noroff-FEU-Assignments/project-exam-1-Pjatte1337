@@ -53,6 +53,11 @@ header p {
     font-size: 35px;
 }
 
+header p:hover {
+    color: #ffffff;
+
+}
+
 header .navigation {
     display: flex;
     justify-content: center;
