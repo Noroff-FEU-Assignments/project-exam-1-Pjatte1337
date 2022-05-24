@@ -1,6 +1,8 @@
 /* ===== Fonts ===== */ 
 @import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Montserrat+Alternates:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Montserrat+Subrayada:wght@400;700&family=Oswald:wght@200;300;400;500;600;700&family=Pacifico&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto+Slab:wght@700&display=swap');
-
+::-webkit-scrollbar {
+    display: none;
+}
 /* ===== Body and Main===== */ 
 body {
     font-family: 'p', sans-serif;
@@ -16,7 +18,6 @@ main {
     align-items: center;
     flex-direction: column;
     max-width: 100%;
-    
 }
 
 * {
@@ -83,6 +84,7 @@ header .navigation li a {
     font-weight: bold;
     font-style: italic;
     font-size: 1rem;
+    color: #ff0000;
     border-bottom: 2px solid #ffffff;
     border-top: 2px solid #ffffff;
 }
@@ -93,8 +95,14 @@ header .navigation li a:hover {
     border-top: 2px solid #ff0000;
 }
 
-
-
+#preloader {
+    background: #000 url(../img/loading.gif) no-repeat center center;
+    background-size: 30%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+} 
 
 
 
@@ -152,18 +160,6 @@ footer p {
 
 
 
-/* ===== Loader ===== */ 
-#preloader {
-    background: #000 url(../img/loading.gif) no-repeat center center;
-    background-size: 30%;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-} 
-
-
-
 /* ====== Head Title ====== */
 .head {
     display: flex;
@@ -173,7 +169,6 @@ footer p {
     justify-content: center;
     margin-bottom: 55px;
 }
-
 
 .title {
     height: 100px;
@@ -264,7 +259,10 @@ footer p {
     text-decoration: underline;
 
 }
-/* slider */
+
+
+
+/* ====== slider ====== */
 .slider-container {
     width: 990px;
     margin-bottom: 20px;
@@ -300,7 +298,6 @@ footer p {
     color: #ffffff;
     border-radius: 0.5rem;
 }
-
 
 .slide:nth-child(1) h3 {
     position: absolute;
@@ -452,7 +449,6 @@ footer p {
     height: auto;
     max-width: 800px;
     margin: 0 auto;
-
 }
 
 .image-five {
@@ -704,8 +700,6 @@ footer p {
     border: 2px solid #fff;
 }
 
-
-
 .wrapper #error_message {
     margin-bottom: 20px;
     padding: 0px;
@@ -716,7 +710,6 @@ footer p {
     border-radius: 10px;
     font-weight: bold;
 }
-
 
 .map {
     width: 100%;
@@ -732,7 +725,9 @@ iframe {
     box-shadow: 0px 0px 13px 2px #13520c;
 }
 
-/* dropdown-menu */
+
+
+/* ====== Dropdown ====== */
 .dropdown-menu {
     position: relative;
     display: none;
@@ -748,42 +743,41 @@ iframe {
     font-weight: bold;
     border: 2px solid #fff;
 }
- .dropdown-menu ul {
+.dropdown-menu ul {
     list-style: none;
     font-size: 1rem;
 }
 
- .dropdown-menu a {
+.dropdown-menu a {
     color: #000;
     text-decoration: none;
 }
 
- .dropdown-menu a:hover {
+.dropdown-menu a:hover {
     color: #fff;
     text-decoration: none;
 }
 
- .dropdown {
+.dropdown {
     position: absolute;
     width: 200px;
     color: #fff;
-
 }
 
- .dropdown li {
+.dropdown li {
     display: none;
     opacity: 0;
     background-color: #fff;
     transition: color .3s;
 }
 
- .dropdown li:hover {
+.dropdown li:hover {
     background: #000;
     color: #ff0000;
 
 }
 
- .dropdown-menu:hover .dropdown li {
+.dropdown-menu:hover .dropdown li {
     display: block;
     animation: animation .5s forwards;
 }
@@ -799,32 +793,26 @@ iframe {
     }
 }
 
- .dropdown.menu .dropdown li:nth-last-child(1) {
+.dropdown.menu .dropdown li:nth-last-child(1) {
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
 }
 
- .dropdown-menu:hover .dropdown li:nth-child(2) {
+.dropdown-menu:hover .dropdown li:nth-child(2) {
     animation-delay: .2s;
 }
 
- .dropdown-menu:hover .dropdown li:nth-child(3) {
+.dropdown-menu:hover .dropdown li:nth-child(3) {
     animation-delay: .4s;
 }
 
- .dropdown-menu:hover .dropdown li:nth-child(4) {
+.dropdown-menu:hover .dropdown li:nth-child(4) {
     animation-delay: .6s;
 }
 
 
 
-
-
-
-
-
-
-/* anima */
+/* animation*/
 
 @keyframes fadeIn {
     0% {
@@ -868,8 +856,7 @@ iframe {
 
 
 
-
-/* MODAL */
+/* ====== Modal ====== */
 
 .modal {
     position: fixed;
