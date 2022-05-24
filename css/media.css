@@ -268,9 +268,17 @@
         width: 768px;
     }
     .text-content {
-        width:auto;
-        font-size: 12px;
-        left: 0px;
+        width:400px;
+        position: relative;
+        left: -50px;
+    }
+    .text-content h2, .text-content p {
+        position: relative;
+        left: 250px;
+    }
+    .text-content{
+        justify-content: center;
+        align-items: center;
     }
     .content-img  {
         height: 400px;
