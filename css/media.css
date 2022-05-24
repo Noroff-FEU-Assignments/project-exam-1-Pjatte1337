@@ -268,8 +268,9 @@
         width: 768px;
     }
     .text-content {
-        width:450px;
+        width:auto;
         font-size: 12px;
+        left: 0px;
     }
     .content-img  {
         height: 400px;
