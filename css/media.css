@@ -268,9 +268,8 @@
         width: 768px;
     }
     .text-content {
-        width:400px;
-        left: 180px;
-        position: relative;
+        width:450px;
+        font-size: 12px;
     }
     .content-img  {
         height: 400px;
