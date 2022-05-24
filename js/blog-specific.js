@@ -20,28 +20,28 @@ async function fetchContent() {
 
     try {
         const response = await fetch(url);
-        const post = await response.json();
+        const content = await response.json();
 
-        console.log(post);
+        console.log(content);
 
-            const headline = post.acf.h1;
-            const img1 = post.acf.image1;
-            const title = post.acf.h2;
-            const paragraph1 = post.acf.p1;
-            const paragraph2 = post.acf.p2;
-            const img2 = post.acf.image2;
-            const img3 = post.acf.image3;
-            const img4 = post.acf.image4;
-            const paragraph3 = post.acf.p3;
-            const paragraph4 = post.acf.p4;
-            const img5 = post.acf.image5;
-            const paragraph5 = post.acf.p5;
-            const paragraph6 = post.acf.p6;
-            const score = post.acf.score;
-            const lineup1 = post.acf.lineup1;
-            const lineup2 = post.acf.lineup2;
-            const HTMLTitle = post.acf.name;
-            const author = post.acf.author;
+            const headline = content.acf.h1;
+            const img1 = content.acf.image1;
+            const title = content.acf.h2;
+            const paragraph1 = content.acf.p1;
+            const paragraph2 = content.acf.p2;
+            const img2 = content.acf.image2;
+            const img3 = content.acf.image3;
+            const img4 = content.acf.image4;
+            const paragraph3 = content.acf.p3;
+            const paragraph4 = content.acf.p4;
+            const img5 = content.acf.image5;
+            const paragraph5 = content.acf.p5;
+            const paragraph6 = content.acf.p6;
+            const score = content.acf.score;
+            const lineup1 = content.acf.lineup1;
+            const lineup2 = content.acf.lineup2;
+            const HTMLTitle = content.acf.name;
+            const author = content.acf.author;
 
             
 
@@ -93,12 +93,12 @@ async function fetchContent() {
                                             images.forEach((img) => {
                                                 img.addEventListener("click", (e) => {
                                                     imgSrc = e.target.src;
-                                                    popUpModal(imgSrc);
+                                                    popUp(imgSrc);
                                                     console.log(imgSrc)
                                                 });
                                             });
 
-                                            let popUpModal = (src) => {
+                                            let popUp = (src) => {
                                                 const modal = document.createElement("div");
                                                 modal.setAttribute("class", "modal");
                                                 document.querySelector(".container").append(modal);

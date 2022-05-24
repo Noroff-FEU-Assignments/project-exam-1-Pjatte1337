@@ -1,4 +1,4 @@
-// Form
+// Form validation
 function validation() {
     var firstname = document.getElementById("firstname").value;
     var lastname = document.getElementById("lastname").value;

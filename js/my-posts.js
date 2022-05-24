@@ -5,7 +5,7 @@ const perPage = document.querySelector(".more-per-page");
 async function getPost (url) {
     const response = await fetch(url)
     const post = await response.json();
-    console.log(post);
+    //console.log(post);
 
     postContainer.innerHTML = "";
 
@@ -13,8 +13,6 @@ async function getPost (url) {
        const name = post.acf.name;
        const img = post.acf.featured_image;
        const id = post.id;
-       const prev = post.acf.prevtext;
-       const author = post.acf.author;
 
        postContainer.innerHTML += ` <div class="post"> 
                                     <h2>${name}</h2>
@@ -29,8 +27,9 @@ async function getPost (url) {
 }
 getPost(url);
 
+
+// For more result on the page
 perPage.onclick = function() {
     const newUrl = url + "&per_page=12"
-    postContainer.innerHTML = "";
     getPost(newUrl);
 }

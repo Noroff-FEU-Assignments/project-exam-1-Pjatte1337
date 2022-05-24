@@ -627,9 +627,9 @@
         left: 0px;
     }
     .image-five {
-        width: 300px;
-        height: 250px;
-        left: 0px;
+        width: 250px;
+        height: 200px;
+        top: -15px;
        
     }
     .image-two,
@@ -664,7 +664,8 @@
 
 
     .lineup-one,
-    .lineup-two {
+    .lineup-two,
+    .score {
         display: none;
     }
 

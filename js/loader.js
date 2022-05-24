@@ -1,5 +1,4 @@
 /* Loader */
-
 const loader = document.getElementById("preloader");
 
 
