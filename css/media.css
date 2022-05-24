@@ -4,11 +4,9 @@
     .head {
         width: 1200px;
     }
-
     .top-content {
         width: 1200px;
     }
-
     .homepage-content {
         width: 1200px;
     }
@@ -17,7 +15,6 @@
         width: 1200px;
         margin-top: -200px;
     }
-
     .about-me,
     .about-blog,
     .about-want {
@@ -25,7 +22,6 @@
         height: 250px;
         left: 100px;
     }
-
     .prevBtn,
     .nextBtn{
         top: 50px;
@@ -35,18 +31,15 @@
     }
 }
 
-
 /* ===== Media query 1060px===== */ 
 @media screen and (max-width: 1060px) {
     /*Homepage*/
     .head {
         width: 1060px;
     }
-
     .top-content {
         width: 1060px;
     }
-
     .homepage-content {
         width: 1060px;
     }
@@ -66,7 +59,6 @@
     .about-content{
         width: 1060px;
     }
-
     .about-me,
     .about-blog,
     .about-want {
@@ -74,7 +66,6 @@
         left: 125px;
         padding: 50px;
     }
-
     .container-show {
         position: relative;
         left: -10px;
@@ -84,18 +75,15 @@
       }
 }
 
-
 /* ===== Media query 992px===== */ 
 @media screen and (max-width: 992px) {
     /*index*/
     .head {
         width: 992px;
     }
-
     .top-content {
         width: 992px;
     }
-
     .homepage-content {
         width: 992px;
     }
@@ -120,7 +108,6 @@
         top: 50px;
         left: 3%;
     }
-
     .readBtn {
         top: -150px;
         left: 5px;
@@ -144,7 +131,6 @@
     .about-content{
         width: 992px;
     }
-
     .about-me,
     .about-blog,
     .about-want {
@@ -156,7 +142,6 @@
       }
 }
 
-
 /* ===== Media query 900px===== */ 
 @media screen and (max-width: 900px) {
     /*Header*/
@@ -167,11 +152,9 @@
     .head {
         width: 900px;
     }
-
     .top-content {
         width: 900px;
     }
-
     .homepage-content {
         width: 900px;
     }
@@ -238,20 +221,16 @@
         width: 900px;
         top: 50px;
     }
-
     .about-me,
     .about-blog,
     .about-want {
         width: 80%;
         left: 80px;
     }
-
     .about-content p {
         font-size: 12px;
       }
-
 }
-
 
 /* ===== Media query 768px===== */ 
 @media screen and (max-width: 768px) {
@@ -259,11 +238,9 @@
     .head {
         width: 768px;
     }
-
     .top-content {
         width: 768px;
     }
-
     .homepage-content {
         width: 768px;
     }
@@ -275,10 +252,6 @@
     .text-content h2, .text-content p {
         position: relative;
         left: 250px;
-    }
-    .text-content{
-        justify-content: center;
-        align-items: center;
     }
     .content-img  {
         height: 400px;
@@ -301,7 +274,6 @@
         top: -222px;
         left: 0px;
     }
-
     .slide h3 {
         display: none;
     }
@@ -320,7 +292,6 @@
     .headline {
         font-size: 35px;
     }
-
     .headline-two {
         font-size: 19px;
     }
@@ -342,14 +313,12 @@
         width: 190px;
         height: 200px;
     }
-
     .content-one,
     .content-three,
     .content-four,
     .content-five {
         width: 600px;
     }
-
     .score,
     .lineup-one,
     .lineup-two {
@@ -360,7 +329,6 @@
     .about-content{
         width: 768px;
     }
-
     .about-me,
     .about-blog,
     .about-want {
@@ -371,46 +339,13 @@
     }
     .about-content p {
         font-size: 12px;
-      }
+    }
 
     .about-want {
         top: 50px;
         height: 300px;
     }
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ===== Media query 600px===== */ 
 @media screen and (max-width: 600px) {
@@ -431,9 +366,7 @@
         width: 450px;
     }
     .text-content {
-        width:400px;
-        position: relative;
-        left: 100px;
+        left: -150px;
     }
     .slider-container {
         width: 450px;
@@ -536,38 +469,7 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ===== Media query 600px===== */ 
+/* ===== Media query 400px===== */ 
 @media screen and (max-width: 400px) {
     /*index*/
     .head {
@@ -707,4 +609,67 @@
         height: 300px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
