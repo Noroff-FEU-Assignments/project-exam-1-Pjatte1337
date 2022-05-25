@@ -14,38 +14,33 @@ const url = `https://www.joakimvanebo.one/wp-json/wp/v2/blogs2/${id}?acf_format=
 
 console.log(url);
 
-
-
 async function fetchContent() {
+  try {
+    const response = await fetch(url);
+    const content = await response.json();
 
-    try {
-        const response = await fetch(url);
-        const content = await response.json();
+    console.log(content);
 
-        console.log(content);
+    const headline = content.acf.h1;
+    const img1 = content.acf.image1;
+    const title = content.acf.h2;
+    const paragraph1 = content.acf.p1;
+    const paragraph2 = content.acf.p2;
+    const img2 = content.acf.image2;
+    const img3 = content.acf.image3;
+    const img4 = content.acf.image4;
+    const paragraph3 = content.acf.p3;
+    const paragraph4 = content.acf.p4;
+    const img5 = content.acf.image5;
+    const paragraph5 = content.acf.p5;
+    const paragraph6 = content.acf.p6;
+    const score = content.acf.score;
+    const lineup1 = content.acf.lineup1;
+    const lineup2 = content.acf.lineup2;
+    const HTMLTitle = content.acf.name;
+    const author = content.acf.author;
 
-            const headline = content.acf.h1;
-            const img1 = content.acf.image1;
-            const title = content.acf.h2;
-            const paragraph1 = content.acf.p1;
-            const paragraph2 = content.acf.p2;
-            const img2 = content.acf.image2;
-            const img3 = content.acf.image3;
-            const img4 = content.acf.image4;
-            const paragraph3 = content.acf.p3;
-            const paragraph4 = content.acf.p4;
-            const img5 = content.acf.image5;
-            const paragraph5 = content.acf.p5;
-            const paragraph6 = content.acf.p6;
-            const score = content.acf.score;
-            const lineup1 = content.acf.lineup1;
-            const lineup2 = content.acf.lineup2;
-            const HTMLTitle = content.acf.name;
-            const author = content.acf.author;
-
-            
-
-            contentContainer.innerHTML = `  <div class="blog-content">
+    contentContainer.innerHTML = `  <div class="blog-content">
                                             <h1 class="headline">${headline}</h1>
 
                                             <div class="top">
@@ -83,45 +78,40 @@ async function fetchContent() {
 
 
                                             </div>
-                                            `
-                                            
+                                            `;
 
-                                            // Creating the modal for making the post images bigger
-                                            const images = document.querySelectorAll(".image");
-                                            let imgSrc;
+    // Creating the modal for making the post images bigger
+    const images = document.querySelectorAll(".image");
+    let imgSrc;
 
-                                            images.forEach((img) => {
-                                                img.addEventListener("click", (e) => {
-                                                    imgSrc = e.target.src;
-                                                    popUp(imgSrc);
-                                                    console.log(imgSrc)
-                                                });
-                                            });
+    images.forEach((img) => {
+      img.addEventListener("click", (e) => {
+        imgSrc = e.target.src;
+        popUp(imgSrc);
+        console.log(imgSrc);
+      });
+    });
 
-                                            let popUp = (src) => {
-                                                const modal = document.createElement("div");
-                                                modal.setAttribute("class", "modal");
-                                                document.querySelector(".container").append(modal);
-                                                const newImage = document.createElement("img");
-                                                newImage.setAttribute("src", src);
-                                    
-                                                window.onclick = function (event) {
-                                                    if (event.target == modal) {
-                                                      modal.style.display = "none";
-                                                    }
-                                                  };
-                                    
-                                                modal.append(newImage);
-                                            };
+    let popUp = (src) => {
+      const modal = document.createElement("div");
+      modal.setAttribute("class", "modal");
+      document.querySelector(".container").append(modal);
+      const newImage = document.createElement("img");
+      newImage.setAttribute("src", src);
 
-                                            newTitle.innerHTML += `Calcio || ${HTMLTitle}`
-                                            
-                                        } catch (error) {
-                                            contentContainer.innerHTML += `An error has occured, please return to main page or contact us`;
-                                        }
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
         }
-    
+      };
+
+      modal.append(newImage);
+    };
+
+    newTitle.innerHTML += `Calcio || ${HTMLTitle}`;
+  } catch (error) {
+    contentContainer.innerHTML += `An error has occured, please return to main page or contact us`;
+  }
+}
 
 fetchContent();
-
-   
