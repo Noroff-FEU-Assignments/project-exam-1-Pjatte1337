@@ -341,7 +341,7 @@ p {
 
 .prevBtn,
 .nextBtn {
-  font-size: 70px;
+  font-size: clamp(24px, 2vw, 36px);
   cursor: pointer;
   margin: 0 0 0 75rem;
   color: #fff;
@@ -353,7 +353,7 @@ p {
   top: -250px;
   left: -600px;
   display: inline-flex;
-  background-color: #000;
+  background: transparent;
 }
 
 .prevBtn:hover,
@@ -571,11 +571,9 @@ p {
 /* ====== About Page ====== */
 .about-content {
   width: 1400px;
-  height: 100%;
-  padding-top: 0px;
-  position: relative;
-  top: 30px;
-  margin-top: -250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .about-me {
@@ -584,7 +582,7 @@ p {
   text-align: left;
   justify-content: center;
   position: relative;
-  border-top: 2px solid #ff0000;
+  border-bottom: 2px solid #ff0000;
 }
 
 .about-blog {
@@ -593,7 +591,7 @@ p {
   text-align: left;
   justify-content: center;
   position: relative;
-  border-top: 2px solid #ff0000;
+  border-bottom: 2px solid #ff0000;
 }
 
 .about-want {
@@ -602,7 +600,6 @@ p {
   text-align: left;
   justify-content: center;
   position: relative;
-  border-top: 2px solid #ff0000;
   border-bottom: 2px solid #ff0000;
 }
 
@@ -836,7 +833,7 @@ iframe {
   position: fixed;
   left: 0;
   right: 0s;
-  top: 50%;
+  top: 65%;
   transform: translateY(-50%);
   width: 100%;
   height: 90%;
@@ -845,7 +842,7 @@ iframe {
 
 .modal img {
   width: 1000px;
-  height: 800px;
+  height: 650px;
   margin: 20px;
   border-style: double;
   border-color: #0b3b59;
