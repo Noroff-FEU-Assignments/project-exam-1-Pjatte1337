@@ -1,5 +1,5 @@
 <div>
-  <h1> Calcio Blog</h1>
+  <h1> Calcio The Blog </h1>
   <p> Project Exam 1 @ Noroff School of technology and digital media </p>
  </div>
  
@@ -36,7 +36,7 @@
 
 ### Link to page
 <div>
-  <a href="https://cross-course-joakimvanebo.netlify.app/"> SquareEyes</a>
+  <a href="https://exam-joakimvanebo.netlify.app/"> Calcio The Blog </a>
 </div>
 
 ---
