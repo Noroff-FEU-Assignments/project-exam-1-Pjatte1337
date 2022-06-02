@@ -13,7 +13,10 @@
  
 ### Description
 <p>
- 
+  This was my Project Exam where we hade to make a blog website from the beginning.
+  On this project I did choose the theme and the content by myself, everything from wireframe/prototype, design and HTML.
+  addition to CSS and HTML I used JavaScript to fetch and API from a WordPress page with all the blog content.
+  In this project we needed to show that we can use rest API and other features in JavaScript like onclick modal for the pictures and formvalidation for the contact     form.  
 </p>
 
  ---
